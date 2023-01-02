@@ -4,102 +4,101 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./fonts.css">
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./css/fonts.css">
+    <link rel="stylesheet" href="./css/main.css">
     <title>WebStudio</title>
 </head>
 <body>
     <header class="header">
-      <a class='link' href="./index.html">
-        <h1 class="logo">Web<span class="logo-element">Studio</span></h1>       
-      </a>  
-      <nav>
-        <ul>
-            <li><a href="">Studio</a></li>
-            <li><a href="">Portfolio</a></li>
-            <li><a href="">Contact</a></li>
+    <nav class="site-nav">
+        <a class='link' href="./index.html">
+            <h1 class="logo">Web<span class="logo-element">Studio</span></h1>       
+        </a>  
+        <ul class="navigation">
+            <li><a href="" class="navigation-link">Studio</a></li>
+            <li><a href="" class="navigation-link">Portfolio</a></li>
+            <li><a href="" class="navigation-link">Contact</a></li>
         </ul>
 
-        <div>
-            <ul>
-                <li><a href="tell:+380961111111">+38 096 111 11 11</a></li>
-                <li><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-            </ul>
-        </div>
+        <ul class="contacts">
+            <li><a class="contacts-link" href="tell:+380961111111">+38 096 111 11 11</a></li>
+            <li><a class="contacts-link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+        </ul>
     </nav>
     </header>
 
     <main>
         <section class="hero">
-            <h2>Effective solutions for you business</h2>
-            <button type="button">Order a service</button>
+            <h2 class="hero-title">Effective solutions for you business</h2>
+            <button type="button" class="button">Order a service</button>
         </section>
 
-        <section>
+        <section class="section">
             <ul>
                 <li>
-                    <h3>Attexntion to detail</h3>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis odio veritatis aperiam omnis commodi delectus!</p>
+                    <h3  class="section-subtitle">Attexntion to detail</h3>
+                    <p class="section-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis odio veritatis aperiam omnis commodi delectus!</p>
                 </li>
                 <li>
-                    <h3>Punctuality</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem accusamus nesciunt a tempora? Neque, blanditiis.</p>
+                    <h3  class="section-subtitle">Punctuality</h3>
+                    <p class="section-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem accusamus nesciunt a tempora? Neque, blanditiis.</p>
                 </li>
                 <li>
-                    <h3>Planning</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde tempora quidem iure architecto vel cumque.</p>
+                    <h3  class="section-subtitle">Planning</h3>
+                    <p class="section-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde tempora quidem iure architecto vel cumque.</p>
                 </li>
                 <li>
-                    <h3>Modern technologies</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde tempora quidem iure architecto vel cumque.</p>
+                    <h3  class="section-subtitle">Modern technologies</h3>
+                    <p class="section-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde tempora quidem iure architecto vel cumque.</p>
                 </li>
             </ul>
         </section>
 
-        <section>
-            <h2>What are we doing</h2>
+        <section class="section">
+            <h2 class="section-title">What are we doing</h2>
             <img src="./images/work/programming.png" alt="programming" width="370px" height="294px">
             <img src="./images/work/responsive.png" alt="responsive" width="370px" height="294px">
             <img src="./images/work/design.png" alt="design" width="370px" height="294px">
         </section>
 
-        <section>
-            <h2>Our Team</h2>
-            <ul>
+        <section class="section">
+            <h2 class="section-title">Our Team</h2>
+            <ul class="team-list">
                 <li>
                     <img src="./images/team/igor.jpg" alt="igor" width="270px" height="260px">
-                    <h3>Igor Demyanenko</h3>
-                    <p>Product Designer</p>
+                    <h3 class="team-name">Igor Demyanenko</h3>
+                    <p class="team-proff">Product Designer</p>
                 </li>
                 <li>
                     <img src="./images/team/olga.jpg" alt="olga" width="270px" height="260px">
-                    <h3>Olga Repina</h3>
-                    <p>Frontend Developer</p>
+                    <h3 class="team-name">Olga Repina</h3>
+                    <p class="team-proff">Frontend Developer</p>
                 </li>
                 <li>
                     <img src="./images/team/nikolay.jpg" alt="nikolay" width="270px" height="260px">
-                    <h3>Nikolai Tarasov</h3>
-                    <p>Marketing</p>
+                    <h3 class="team-name">Nikolai Tarasov</h3>
+                    <p class="team-proff">Marketing</p>
                 </li>
                 <li>
                     <img src="./images/team/muhailo.jpg" alt="muhailo" width="270px" height="260px">
-                    <h3>Mikhail Ermakov</h3>
-                    <p>UI Designer</p>
+                    <h3 class="team-name">Mikhail Ermakov</h3>
+                    <p class="team-proff">UI Designer</p>
                 </li>
             </ul>
         </section>
     </main>
+
     <footer class="footer">
         <a class='link' href="./index.html">
             <h1 class="logo">Web<span class="logo-element">Studio</span></h1>       
           </a>  
-          <address>
-            <ul>
+          <address class="address">
+            <ul class="address-list">
                 <li>
                     <p>Kyiv, Lesia Ukrainka Ave, 26</p>
                 </li>
-                <li><a href="tell:+380961111111">+38 096 111 11 11</a></li>
-                <li><a href="mailto:info@devstudio.com"></a>info@devstudio.com</li>
+                <li><a class="contacts-link" href="tell:+380961111111" >+38 096 111 11 11</a></li>
+                <li><a class="contacts-link" href="mailto:info@devstudio.com" >info@devstudio.com</a></li>
             </ul>
           </address>
     </footer>

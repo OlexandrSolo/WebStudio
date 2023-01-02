@@ -1,0 +1,146 @@
+:root{
+    --primary-text-color: #212121;
+    --secondary-text-color: #757575;
+
+    --actual-text-color: #2196F3
+}
+
+body{
+    color: var(--primary-text-color);
+
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+}
+
+a{
+text-decoration: none;
+color: inherit;
+}
+
+ul{
+list-style-type: none;
+}
+
+.section-title{
+font-weight: 700;
+font-size: 36px;
+
+letter-spacing: 0.03em;
+}
+
+.section-subtitle{
+font-weight: 700;
+font-size: 14px;
+letter-spacing: 0.03em;
+
+text-transform: uppercase;
+}
+
+.section-text{
+font-family: 'Roboto';
+font-weight: 400;
+font-size: 14px;
+
+letter-spacing: 0.03em;
+
+color: var(--secondary-text-color);
+}
+
+
+/* =====LOGO===================================== */
+
+/* Logo Header */
+.logo{
+    color: #2196F3;
+
+    font-size: 26px;
+    font-weight: 700;
+    font-family: 'Raleway', sans-serif;
+}
+
+.logo-element{
+    color: #000000;
+}
+
+/* Logo Footer */
+.footer .logo-element{
+    color: #FFFFFF;
+}
+/* ================================================= */
+
+.navigation-link{
+    color: var(--primary-text-color);
+}
+
+.navigation-link:hover,
+.navigation-link:focus{
+    color: var(--actual-text-color);
+}
+
+.contacts-link{
+    color: var(--secondary-text-color)
+}
+.contacts-link:hover,
+.contacts-link:focus{
+    color: var(--actual-text-color);
+}
+
+/*  =====HERO=====================================**/
+.hero{
+    background-color: #2F303A;
+}
+
+.hero-title{
+    color: #FFFFFF;
+
+    font-weight: 900;
+    font-size: 44px;
+
+    text-transform: uppercase;
+   }
+
+   .button{
+    color: #FFFFFF;
+    background-color: var(--actual-text-color);
+
+    font-weight: 700;
+    font-size: 16px;
+
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+   }
+
+   .button:hover, 
+   .button:focus{
+    background-color: #188CE8;
+   }
+/* ================================================= */
+
+/*  =====TEAM=====================================*/
+.team-liys{
+    font-size: 16px;
+}
+.team-name{
+    font-weight: 500;  
+}
+
+.team-proff{
+    color: var(--secondary-text-color);
+
+    font-weight: 400;
+}
+/* ================================================= */
+
+/*  =====FOOTER=====================================*/
+.footer{
+    color: var(--secondary-text-color);
+    background-color: #2F303A;
+}
+
+.address{
+    color: #FFFFFF;
+
+    font-weight: 400;
+    font-style: normal;
+}
+/* ================================================= */
