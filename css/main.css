@@ -1,161 +1,159 @@
-:root{
-    --primary-text-color: #212121;
-    --secondary-text-color: #757575;
+:root {
+  --primary-text-color: #212121;
+  --secondary-text-color: #757575;
 
-    --actual-text-color: #2196F3
+  --actual-text-color: #2196f3;
 }
 
-body{
-    color: var(--primary-text-color);
-
-    font-size: 14px;
-    font-family: 'Roboto', sans-serif;
-    letter-spacing: 0.03em;
-
+.link {
+  text-decoration: none;
+  color: inherit;
 }
 
-a{
-text-decoration: none;
-color: inherit;
+.list {
+  list-style-type: none;
 }
 
-ul{
-list-style-type: none;
+body {
+  color: var(--primary-text-color);
+
+  font-size: 14px;
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: 0.03em;
 }
 
-.section-title{
-font-weight: 700;
-font-size: 36px;
-line-height: 1.2;
-letter-spacing: 0.03em;
+.section-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
 }
 
-.section-subtitle{
-font-weight: 700;
-font-size: 14px;
-letter-spacing: 0.03em;
+.section-subtitle {
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 0.03em;
 
-text-transform: uppercase;
+  text-transform: uppercase;
 }
 
-.section-desc{
-font-family: 'Roboto';
-font-weight: 400;
-font-size: 14px;
+.section-desc {
+  font-family: 'Roboto';
+  font-weight: 400;
+  font-size: 14px;
 
-color: var(--secondary-text-color);
+  color: var(--secondary-text-color);
 }
-
 
 /* =====LOGO===================================== */
 
 /* Logo Header */
-.logo{
-    color: #2196F3;
-    
-    font-family: 'Raleway', sans-serif;
-    font-size: 26px;
-    font-weight: 700;
-    line-height: 1.2;
+.logo {
+  color: #2196f3;
+
+  font-family: 'Raleway', sans-serif;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 1.2;
 }
 
-.logo-element{
-    color: #000000;
+.logo-element {
+  color: #000000;
 }
 
 /* Logo Footer */
-.footer .logo-element{
-    color: #FFFFFF;
+.footer .logo-element {
+  color: #ffffff;
 }
 /* ================================================= */
-.navigation{
-    line-height: 1.1;
+
+.navigation {
+  line-height: 1.1;
 }
-.menu{
-    letter-spacing: 0.02em;
+.menu {
+  letter-spacing: 0.02em;
 }
 
-.menu-link{
-    color: var(--primary-text-color);
+.menu-link {
+  color: var(--primary-text-color);
 }
 
 .menu-link:hover,
-.menu-link:focus{
-    color: var(--actual-text-color);
+.menu-link:focus {
+  color: var(--actual-text-color);
 }
 
-.contacts-link{
-    color: var(--secondary-text-color)
+.contacts-link {
+  color: var(--secondary-text-color);
 }
 .contacts-link:hover,
-.contacts-link:focus{
-    color: var(--actual-text-color);
+.contacts-link:focus {
+  color: var(--actual-text-color);
 }
 
 /*  =====HERO=====================================**/
-.hero{
-    background-color: #2F303A;
+.hero {
+  background-color: #2f303a;
 }
 
-.hero-title{
-    color: #FFFFFF;
+.hero-title {
+  color: #ffffff;
 
-    font-weight: 900;
-    font-size: 44px;
-    letter-spacing: 0.06em;
+  font-weight: 900;
+  font-size: 44px;
+  letter-spacing: 0.06em;
 
+  text-transform: uppercase;
+}
 
-    text-transform: uppercase;
-   }
+.modal-button {
+  color: #ffffff;
+  background-color: var(--actual-text-color);
 
-   .modal-button{
-    color: #FFFFFF;
-    background-color: var(--actual-text-color);
+  font-weight: 700;
+  font-size: 16px;
 
-    font-weight: 700;
-    font-size: 16px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
 
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    border-radius: 4px;
-    
-    cursor: pointer;
-   }
+  cursor: pointer;
+}
 
-   .modal-button:hover, 
-   .modal-button:focus{
-    background-color: #188CE8;
-   }
+.modal-button:hover,
+.modal-button:focus {
+  background-color: #188ce8;
+}
 /* ================================================= */
 
 /*  =====FEATURES=====================================*/
-.features-list{
-    line-height: 1.7;
+.features-list {
+  line-height: 1.7;
 }
 /*  =====TEAM=====================================*/
-.team-list{
-    font-size: 16px;
+.team-list {
+  font-size: 16px;
 }
-.team-name{
-    font-weight: 500;  
+.team-name {
+  font-weight: 500;
 }
 
-.team-proff{
-    color: var(--secondary-text-color);
+.team-proff {
+  color: var(--secondary-text-color);
 
-    font-weight: 400;
+  font-weight: 400;
 }
 /* ================================================= */
 
 /*  =====FOOTER=====================================*/
-.footer{
-    color: var(--secondary-text-color);
-    background-color: #2F303A;
+.footer {
+  color: var(--secondary-text-color);
+  background-color: #2f303a;
 }
 
-.address{
-    color: #FFFFFF;
+.address {
+  color: #ffffff;
 
-    font-weight: 400;
-    font-style: normal;
+  font-weight: 400;
+  font-style: normal;
 }
 /* ================================================= */
