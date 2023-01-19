@@ -12,17 +12,18 @@
 
 .list {
   list-style-type: none;
+  margin: 0;
+}
+
+.title {
+  margin: 0;
+  /* padding: 0; */
 }
 
 .container {
   width: 1200px;
   padding: 0 15px 0 15px;
   margin: 0 auto;
-  text-align: center;
-}
-
-.container-no-centred {
-  text-align: right;
 }
 
 body {
@@ -35,13 +36,17 @@ body {
 
 .section {
   padding: 0 0 95px 0;
+
+  background-color: yellow;
 }
 
-.section.no-padding {
-  /* padding: 0;m */
+.section.top-padding {
+  padding-top: 95px;
   background-color: #f5f4fa;
 }
 .section-title {
+  margin-bottom: 50px;
+
   font-weight: 700;
   font-size: 36px;
   line-height: 1.2;
