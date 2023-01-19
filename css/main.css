@@ -33,6 +33,14 @@ body {
   color: var(--primary-text-color);
 }
 
+.section {
+  padding: 0 0 95px 0;
+}
+
+.section.no-padding {
+  /* padding: 0;m */
+  background-color: #f5f4fa;
+}
 .section-title {
   font-weight: 700;
   font-size: 36px;
