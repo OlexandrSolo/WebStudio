@@ -23,8 +23,9 @@
 
 .container {
   width: 1200px;
-  padding: 0 15px 0 15px;
-  margin: 0 auto;
+  padding: 0 15px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 body {
@@ -35,10 +36,14 @@ body {
   color: var(--primary-text-color);
 }
 
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
 .section {
   padding: 0 0 95px 0;
-
-  background-color: yellow;
 }
 
 .section.top-padding {
@@ -77,6 +82,10 @@ body {
 /* =====LOGO===================================== */
 
 /* Logo Header */
+.header-logo {
+  margin-right: 93px;
+}
+
 .logo {
   font-family: 'Raleway', sans-serif;
   font-size: 26px;
@@ -97,13 +106,27 @@ body {
 /* ================================================= */
 
 .navigation {
+  display: flex;
+  align-items: center;
+
   line-height: 1.1;
 }
 .menu {
+  display: flex;
+
   letter-spacing: 0.02em;
 }
 
+.menu-item:not(:last-child),
+.contacts-item:not(:last-child) {
+  margin-right: 50px;
+}
+
 .menu-link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
   color: var(--primary-text-color);
 }
 
@@ -112,9 +135,23 @@ body {
   color: var(--actual-text-color);
 }
 
+.menu-link.current {
+  color: var(--actual-text-color);
+}
+
+.navigation > .contacts {
+  display: flex;
+  margin-left: auto;
+}
+
 .contacts-link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
   color: var(--secondary-text-color);
 }
+
 .contacts-link:hover,
 .contacts-link:focus {
   color: var(--actual-text-color);
@@ -138,19 +175,18 @@ body {
 }
 
 .modal-button {
-  padding: 10px 30px 10px 30px;
+  padding: 10px 30px;
   min-width: 200px;
 
   font-weight: 700;
   font-size: 16px;
-
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
+  color: #ffffff;
+  background-color: var(--actual-text-color);
 
   cursor: pointer;
 
-  color: #ffffff;
-  background-color: var(--actual-text-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
 }
 
 .modal-button:hover,
@@ -161,10 +197,31 @@ body {
 
 /*  =====FEATURES=====================================*/
 .features-list {
+  display: flex;
+  margin-right: -30px;
+
   line-height: 1.7;
 }
+
 .features-list-item {
+  margin-right: 30px;
 }
+
+.features-list-item {
+  width: calc(100% / 4 - 30px);
+  /* min-width: 270px; */
+}
+
+.type-work-list {
+  display: flex;
+  width: calc(100% - 2 * 30px) / 3;
+  margin-right: -30px;
+}
+
+.type-work-item {
+  margin-right: 30px;
+}
+
 /*  =====TEAM=====================================*/
 .team-list {
   font-size: 16px;
@@ -186,7 +243,7 @@ body {
 
 /*  =====FOOTER=====================================*/
 .footer {
-  padding: 60px 0 60px 0;
+  padding: 60px 0;
 
   color: var(--secondary-text-color);
   background-color: #2f303a;

@@ -20,20 +20,24 @@
     <header class="header">
       <div class="container">
         <nav class="navigation">
-          <a class="link" href="./index.html">
+          <a class="header-logo link" href="./index.html">
             <h1 class="logo title">Web<span class="logo-element">Studio</span></h1>
           </a>
 
           <ul class="menu list">
-            <li><a href="./index.html" class="menu-link link">Studio</a></li>
-            <li><a href="" class="menu-link link">Portfolio</a></li>
-            <li><a href="" class="menu-link link">Contact</a></li>
+            <li class="menu-item">
+              <a href="./index.html" class="menu-link link current">Studio</a>
+            </li>
+            <li class="menu-item"><a href="" class="menu-link link">Portfolio</a></li>
+            <li class="menu-item"><a href="" class="menu-link link">Contact</a></li>
           </ul>
 
           <ul class="contacts list">
-            <li><a class="contacts-link link" href="tell:+380961111111">+38 096 111 11 11</a></li>
-            <li>
+            <li class="contacts-item">
               <a class="contacts-link link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+            </li>
+            <li class="contacts-item">
+              <a class="contacts-link link" href="tell:+380961111111">+38 096 111 11 11</a>
             </li>
           </ul>
         </nav>
@@ -41,9 +45,12 @@
     </header>
 
     <main>
-      <div class="">
+      <div class="section">
         <div class="hero">
-          <h2 class="hero-title title">Effective solutions for you business</h2>
+          <h2 class="hero-title title">
+            Effective solutions <br />
+            for you business
+          </h2>
           <button type="button" class="modal-button">Order a service</button>
         </div>
       </div>
@@ -69,14 +76,14 @@
               <h3 class="section-subtitle title">Planning</h3>
               <p class="section-desc text">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde tempora quidem iure
-                architecto vel cumque.
+                architecto vel.
               </p>
             </li>
             <li class="features-list-item">
               <h3 class="section-subtitle title">Modern technologies</h3>
               <p class="section-desc text">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde tempora quidem iure
-                architecto vel cumque.
+                architecto vel.
               </p>
             </li>
           </ul>
@@ -86,9 +93,17 @@
       <section class="section">
         <div class="container">
           <h2 class="section-title title">What are we doing</h2>
-          <img src="./images/work/programming.png" alt="programming" width="370px" height="294px" />
-          <img src="./images/work/responsive.png" alt="responsive" width="370px" height="294px" />
-          <img src="./images/work/design.png" alt="design" width="370px" height="294px" />
+          <ul class="type-work-list list">
+            <li class="type-work-item">
+              <img src="./images/work/programming.png" alt="programming" width="370" height="294" />
+            </li>
+            <li class="type-work-item">
+              <img src="./images/work/responsive.png" alt="responsive" width="370" height="294" />
+            </li>
+            <li class="type-work-item">
+              <img src="./images/work/design.png" alt="design" width="370" height="294" />
+            </li>
+          </ul>
         </div>
       </section>
 
