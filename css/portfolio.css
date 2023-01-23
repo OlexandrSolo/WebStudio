@@ -1,0 +1,13 @@
+.filter-list {
+  display: flex;
+  justify-content: center;
+  margin-right: -8px;
+}
+.filter-item {
+  margin-right: 8px;
+}
+
+.works-list {
+  display: flex;
+  flex-wrap: wrap;
+}
