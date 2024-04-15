@@ -39,10 +39,17 @@ body {
 }
 
 .header {
-    padding: 24px 0;
+    /* padding: 24px 0; */
+}
+
+.header-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
 }
 
 .logo {
+    padding: 24px 0;
     font-family: 'Raleway', sans-serif;
     font-size: 18px;
     font-weight: 700;
@@ -58,18 +65,29 @@ body {
 }
 
 .navigation {
+    margin-left: 76px;
     font-size: 16px;
     font-weight: 500;
 }
 
+.navigation-wrap {
+    display: flex;
+    gap: 40px;
+}
+
 .navigation-list-link {
+    padding: 24px 0;
     color: #2e2f42;
 }
 
-.navigation-social-list {}
+.navigation-social-list {
+    margin-left: auto;
+}
+
 
 .navigation-social-list-link {
     color: #434455;
+    padding: 24px 0;
 }
 
 .navigation-social-list-link:hover,
@@ -99,6 +117,7 @@ body {
 }
 
 .hero-button {
+    padding: 16px 32px;
     font-size: 16px;
     font-weight: 500;
     line-height: 1.5;
@@ -108,7 +127,8 @@ body {
 
     color: #fff;
     background-color: #4d5ae5;
-
+    border-radius: 4px;
+    border: none;
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
 }
 
@@ -152,12 +172,19 @@ body {
 }
 
 /* --------------------------------------- */
+.advantages-list.wrap {}
+
+.advantages-list>li {
+    flex-basis: calc((100% - 72px) / 4);
+}
+
+/* --------------------------------------- */
 .our-team {
     background: #f4f4fd;
 }
 
 .personal-card {
-    width: 264px;
+    flex-basis: calc((100% - 72px) / 4);
     border-radius: 0 0 4px 4px;
     box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
     background: #fff;
@@ -169,8 +196,14 @@ body {
 }
 
 /* ---------------------------------------- */
+
+.portfolio-list.wrap {
+    row-gap: 48px;
+}
+
 .portfolio-card {
-    width: 360px;
+    flex-basis: calc((100% - 48px) / 3);
+
     background: #fff;
     border-bottom: 1px solid #e7e9fc;
     border-left: 1px solid #e7e9fc;
@@ -215,4 +248,11 @@ body {
 
 .thumb {
     overflow: hidden;
+}
+
+.wrap {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    column-gap: 24px;
 }
