@@ -50,11 +50,12 @@ input:focus-visible {
 }
 
 .container {
-    width: 320px;
+    max-width: 320px;
     /* max-width: 1160px; */
-    margin: 0 auto;
-    padding-left: 15px;
-    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 16px;
+    padding-right: 16px;
 }
 
 .wrap {
@@ -230,9 +231,9 @@ body {
 
 /* --------------------------------------- */
 .advantages-list{
-display: flex;
-flex-direction: column;
-row-gap: 72px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 72px;
 }
 
 .advantages-icon{
@@ -241,16 +242,19 @@ row-gap: 72px;
 
 .thumb-advantages {
     display: none;
-    /* display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 8px; */
-
     border: 1px solid #8e8f99;
     border-radius: 4px;
     width: 264px;
     height: 112px;
     background-color: #f4f4fd;
+}
+
+.advantages-subtitle{
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11111;
+    letter-spacing: 0.02em;
+    text-align: center;
 }
 
 /* --------------------------------------- */
@@ -266,26 +270,22 @@ row-gap: 72px;
 }
 
 .personal-card {
-    max-width: 260px;
+    /* flex-basis: 260px; */
     border-radius: 0 0 4px 4px;
     box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
     background: #fff;
     text-align: center;
 }
 
-.personal-card:not(:last-child){
-    /* margin-bottom: 72px; */
-}
-
-.description-personal-card {
-    padding: 32px 16px;
-}
-
-.description-card-name{
+.personal-card-name{
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
+}
+
+.description-personal-card {
+    padding: 32px 16px;
 }
 
 .social-icon-list {
@@ -319,16 +319,13 @@ row-gap: 72px;
 
 /* ---------------------------------------- */
 
-/* .portfolio-list.wrap {
+.portfolio-list {
+    display: flex;
+    flex-direction: column;
     row-gap: 48px;
-} */
-
-.portfolio-card:not(:last-child){
-    margin-bottom: 48px;
 }
 
 .portfolio-card {
-    /* flex-basis: calc((100% - 48px) / 3); */
     background-color: #fff;
 }
 
@@ -404,30 +401,33 @@ row-gap: 72px;
 .footer-description{
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
+
 .footer-subtitle{
-text-align: center;
+    text-align: center;
 }
 
 .footer-text {
-    /* margin-top: 16px; */
 line-height: 1.5;
-/* letter-spacing: 0.02em; */
-    
+font-weight: 400;
+letter-spacing: 0.02em;
 }
 
-.footer-form {
-    text-align: center;
-    /* display: flex;  */
-    /* align-items: center; */
-    /* gap: 24px; */
+.social-media{
+    margin: 72px 0;
 }
+
+.social-media .social-icon-list{
+    column-gap: 16px;
+}
+
 
 .footer-form-input {
     margin-bottom: 16px;
     border: 1px solid #fff;
     border-radius: 4px;
-    width: 264px;
+    width: 288px;
     height: 40px;
     padding-right: 16px;
     padding-left: 16px;
@@ -446,12 +446,11 @@ line-height: 1.5;
 
 .footer-form .button {
     display: flex;
-    /* justify-content: center; */
+    justify-content: center;
     margin: 0 auto;
     align-items: center;
-    gap: 16px;
-    padding-top: 8px;
-    padding-bottom: 8px;
+    gap: 8px 16px;
+    height: 40px;
 }
 
 .footer-btn-icon {
@@ -622,51 +621,130 @@ textarea::placeholder {
 /* ---------------------------------------------- */
 @media screen and (min-width: 768px) {
     .container{
-        width: 768px;
+        max-width: 768px;
     }
 
      .advantages-list{
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        gap: 72px 24px;
+        row-gap: 72px;
+        column-gap: 24px;
      }
      
      .advantages-item {
-    /* flex-basis: calc((100% - 72px) / 4); */
     flex-basis: calc((100% - 72px) / 2);
     }
 
-    .description-card-name{
-        font-weight: 700;
-        font-size: 36px;
-        line-height: 1.11111;
-    }
-
-
     /* ------------------------------------ */
-    .our-team .container{
-        width: 552px;
-    }
 
     .personal-list{
         flex-direction: row;
         flex-wrap: wrap;
+        justify-content: center;
+        gap: 64px 24px;
     }
 
-    .personal-card {
-        /* flex-basis: calc((100% - 24px) / 2); */
+    /* -------------------------------------- */
+
+    .portfolio-list{
+        flex-direction: row;
+        flex-wrap: wrap;
+        column-gap: 24px;
     }
 
-    .description-card-name{
-        /* font-family: "Roboto", sans-serif; */
-       font-family: "Roboto", sans-serif;
-       font-weight: 500;
-        /* font-size: 20px; */
-        /* line-height: 1.2; */
-        /* letter-spacing: 0.02em; */
-        /* text-align: center; */
-        /* color: #2e2f42; */
+    /* ---------------------------------------- */
+
+    .portfolio-card{
+        width: calc((100% - 24px) / 2);
     }
 
+    /* -------------------------------------- */
+
+    .footer .logo {
+        margin-right: auto;
+        margin-left: 0;
+    }
+
+    .footer-wrap.container{
+        max-width: 584px;
+    }
+
+    .footer-wrap{
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .footer-form{
+        display: flex;
+    }
+
+    .footer-form-input {
+        margin-bottom: 0;
+        width: 264px;
+    }
+
+    .social-media{
+        margin-left: 24px;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    .footer-form .button {
+        margin-left: 24px;
+    }
+
+    .footer-subtitle {
+        text-align: left;
+    }
+}
+
+@media screen and (min-width:1158px) {
+    .container{
+        max-width: 1158px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .advantages-list{
+        row-gap: 0;
+    }
+
+     .advantages-item{
+        flex-basis: calc((100% - 72px) / 4);
+    }
+
+    .thumb-advantages{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 8px;
+    }
+
+       .advantages-icon{       
+        display: block;
+    }
+
+    .advantages-subtitle{
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 1.2;
+        text-align: start;
+    }
+
+    /* ------------------------------------- */
+
+    .portfolio-card{
+        flex-basis: calc((100% - 48px) / 3);
+    }
+
+    /* ------------------------------------- */
+
+    .footer-wrap.container{
+        max-width: 1158px;
+    }
+
+    .footer-wrap{
+        justify-content: space-between;
+    }
 }
