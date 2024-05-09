@@ -53,8 +53,8 @@ input:focus-visible {
     width: 320px;
     /* max-width: 1160px; */
     margin: 0 auto;
-    padding-left: 16px;
-    padding-right: 16px;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 .wrap {
@@ -222,6 +222,7 @@ body {
 
 .section-description {
     margin-top: 8px;
+    font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #434455;
@@ -229,18 +230,9 @@ body {
 
 /* --------------------------------------- */
 .advantages-list{
-/* display: flex;
-flex-wrap: wrap;
+display: flex;
 flex-direction: column;
-gap: 72px; */
-}
-
-.advantages-item {
-    /* flex-basis: calc((100% - 72px) / 4); */
-}
-
-.advantages-item:not(:last-child) {
-    margin-bottom: 72px;
+row-gap: 72px;
 }
 
 .advantages-icon{
@@ -270,12 +262,11 @@ gap: 72px; */
     display: flex;
     flex-direction: column;
     align-items: center;
-
+    row-gap: 72px;
 }
 
 .personal-card {
-    width: 264px;
-    /* flex-basis: calc((100% - 72px) / 4); */
+    max-width: 260px;
     border-radius: 0 0 4px 4px;
     box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
     background: #fff;
@@ -283,7 +274,7 @@ gap: 72px; */
 }
 
 .personal-card:not(:last-child){
-    margin-bottom: 72px;
+    /* margin-bottom: 72px; */
 }
 
 .description-personal-card {
@@ -629,3 +620,53 @@ textarea::placeholder {
 }
 
 /* ---------------------------------------------- */
+@media screen and (min-width: 768px) {
+    .container{
+        width: 768px;
+    }
+
+     .advantages-list{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 72px 24px;
+     }
+     
+     .advantages-item {
+    /* flex-basis: calc((100% - 72px) / 4); */
+    flex-basis: calc((100% - 72px) / 2);
+    }
+
+    .description-card-name{
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 1.11111;
+    }
+
+
+    /* ------------------------------------ */
+    .our-team .container{
+        width: 552px;
+    }
+
+    .personal-list{
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .personal-card {
+        /* flex-basis: calc((100% - 24px) / 2); */
+    }
+
+    .description-card-name{
+        /* font-family: "Roboto", sans-serif; */
+       font-family: "Roboto", sans-serif;
+       font-weight: 500;
+        /* font-size: 20px; */
+        /* line-height: 1.2; */
+        /* letter-spacing: 0.02em; */
+        /* text-align: center; */
+        /* color: #2e2f42; */
+    }
+
+}
