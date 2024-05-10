@@ -75,6 +75,77 @@ body {
     color: #2e2f42;
 }
 
+
+/* ----------------------------------------- */
+.mob-menu .container{
+    /* height: 100vh; */
+    min-height: 640px;
+    padding-bottom: 40px;
+}
+.mob-contact-list{
+    margin: 168px 0 48px 0;
+}
+
+.mob-navigation-item{
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11111;
+    letter-spacing: 0.02em;
+    color: #2e2f42;
+}
+
+.mob-navigation-item:not(:last-child){
+    margin-bottom: 40px;
+}
+.mob-navigation-link{
+    color: inherit;
+}
+
+.mob-navigation-item:hover .mob-navigation-link{
+    color:#404bbf;
+}
+
+.mob-contact-item{
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: #434455;
+}
+
+.mob-contact-link{
+    color: inherit;
+}
+
+.mob-contact-item:not(:last-child){
+    margin-bottom: 24px;
+}
+
+.mob-contact-item:hover .mob-contact-link{
+    color: #404bbf;
+}
+
+.btn-menu-close{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 24px 24px 24px auto;
+    min-width: 24px;
+    height: 24px;
+    background-color: transparent;
+    border-radius: 100%;
+    border: 1px solid #e7e9fc;
+    transition: border-color 350ms ease-in-out, fill 350ms ease-in-out;
+}
+
+.btn-menu-close:hover{
+    border-color: #4d5ae5;
+    fill: #4d5ae5;
+}
+
+.social-icon-list.mob-icon{
+    justify-content: space-around;
+}
 /* ----------------------------------------- */
 
 .header {
@@ -82,9 +153,7 @@ body {
 }
 
 .header-wrap {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
+    display: none;
 }
 
 .logo {
@@ -369,7 +438,6 @@ body {
     display: flex;
     flex-direction: column;
     row-gap: 72px;
-    /* justify-content: space-around; */
 }
 
 .footer .logo {
@@ -409,9 +477,9 @@ body {
 }
 
 .footer-text {
-line-height: 1.5;
-font-weight: 400;
-letter-spacing: 0.02em;
+    line-height: 1.5;
+    font-weight: 400;
+    letter-spacing: 0.02em;
 }
 
 .social-media{
@@ -623,6 +691,19 @@ textarea::placeholder {
     .container{
         max-width: 768px;
     }
+    /* ---------------------------------- */
+
+    .mob-menu{
+        display: none;
+    }
+
+    .header-wrap {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    /* ---------------------------------- */
 
      .advantages-list{
         display: flex;
@@ -630,10 +711,10 @@ textarea::placeholder {
         flex-wrap: wrap;
         row-gap: 72px;
         column-gap: 24px;
-     }
+    }
      
      .advantages-item {
-    flex-basis: calc((100% - 72px) / 2);
+        width: calc((100% - 72px) / 2);
     }
 
     /* ------------------------------------ */
